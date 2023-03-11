@@ -25,6 +25,7 @@ let getDonorRecommendation = (subCategory, employeeRange, charityProvince) => {
                 obj.donor_province === charityProvince && obj.frequent_sub_category === parseInt(subCategory) && obj.donations_per_employee_range === parseInt(employeeRange)
             );
 
+            filteredObjects.sort((a, b) => b.num_charities_supported - a.num_charities_supported);
             let result = {};
             result.data = filteredObjects;
             result.statusCode = 200;

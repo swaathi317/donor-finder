@@ -134,7 +134,7 @@
     },
     "resultSection": {
         "num_result_label": "",
-        "num_charities_label": "Number of charities donated between 2018 - 2021",
+        "num_charities_label": "Number of charities supported between 2018 - 2021",
         "num_donations_label": "Number of donations made between 2018 -2021",
         "freq_donor_label": "Frequency of donation",
         "back_to_home": "Find donors for another Non-Profit"
