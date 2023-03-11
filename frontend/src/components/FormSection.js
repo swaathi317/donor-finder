@@ -22,9 +22,9 @@ const FormSection = (props) => {
         queryData['charity_focus'] = charityFocus;
         queryData['charity_employees'] = charityEmployees;
 
-
+        let platform = process.env.REACT_APP_ENV;
         const params = new URLSearchParams(queryData);
-        let url = CONSTANTS.apiCall.url + params.toString();
+        let url = CONSTANTS.apiCall[platform] + params.toString();
         //call API 
         fetch(url, {
             method: "GET"

@@ -6,7 +6,7 @@ const donorRoute = require('./src/routes/donorRoute');
 
 
 //To be changed in production
-const port = 5000;
+const PORT = process.env.PORT || 5000;
 
 //Load environment variables
 require('dotenv').config()
@@ -25,8 +25,8 @@ app.get('*', (req, res) => {
 });
 
 // start the server
-app.listen(port, () => {
-    console.log('listening on port', port);
+app.listen(PORT, () => {
+    console.log('listening on port', PORT);
 })
 
 module.exports = app;

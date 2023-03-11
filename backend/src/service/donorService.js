@@ -1,4 +1,3 @@
-const donorDao = require('../dao/donorDao');
 const fs = require('fs');
 
 /**

@@ -140,6 +140,7 @@
         "back_to_home": "Find donors for another Non-Profit"
     },
     "apiCall": {
-        "url": "http://localhost:5000/donor?"
+        "local": "http://localhost:5000/donor?",
+        "production": "https://eduquest.cyclic.app/donor?"
     }
 }

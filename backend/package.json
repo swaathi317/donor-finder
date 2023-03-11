@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@stargate-oss/stargate-grpc-node-client": "^0.2.3",
-    "astrajs": "^0.0.1-security",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
