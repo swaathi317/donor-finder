@@ -28,7 +28,7 @@ const ResultsPage = (props) => {
 
         <div id="results-page">
             <div className="results-count">
-                We found 10 donors who are more likely to donate for your cause
+                We found {resultData.length} donors who are more likely to donate for your cause
             </div>
             <div className="results-container">
 

@@ -2,7 +2,7 @@
     width: 80%;
     margin: 0 auto;
     background-color: var(--theme-grid-boxes-background);
-    padding: 0 30px;
+    padding: 10px 30px;
     border-radius: var(--border-radius-container);
 }
 

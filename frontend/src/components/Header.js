@@ -6,10 +6,11 @@ import CONSTANTS from '../constants/textConstants.json';
 const Header = (props) => {
 
     let screenWidth = props.screenWidth;
+    let toSetPageView = props.toSetPageView;
 
     return (
 
-        <div id="header">
+        <div id="header" onClick={() => toSetPageView('home')}>
             <h1> EduQuest </h1>
         </div>
 

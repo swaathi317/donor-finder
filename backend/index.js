@@ -19,6 +19,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors())
 app.use('/donor', donorRoute);
 
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/build/index.html'));
+});
+
 // start the server
 app.listen(port, () => {
     console.log('listening on port', port);

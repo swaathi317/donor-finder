@@ -37,7 +37,7 @@ const Home = () => {
 
 
                 <div className="content-wrapper">
-                    <Header screenWidth={screenWidth} />
+                    <Header screenWidth={screenWidth} toSetPageView={toSetPageView} />
                     {pageView === 'home' &&
                         <HomePage screenWidth={screenWidth} toSetPageView={toSetPageView} toSetResultsData={setResultData} />
                     }

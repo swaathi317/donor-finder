@@ -42,6 +42,7 @@ footer {
 
 #header {
   margin: 0 auto;
+  cursor: pointer;
 }
 
 footer {
