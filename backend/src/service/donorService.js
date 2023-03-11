@@ -1,4 +1,3 @@
-const dappDao = require('../daos/dappDao');
 
 
 
@@ -35,7 +34,11 @@ let getDonorRecommendation = (subCategory, employeeRange, charityProvince) => {
                 "frequency_of_donation": "Very frequent; every year"
             }
         ];
-        resolve(donorData)
+        let result = {}
+        result.data = donorData;
+        result.statusCode = 200;
+
+        resolve(result)
 
     });
 }

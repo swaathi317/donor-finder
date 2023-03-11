@@ -1,4 +1,4 @@
-const donorService = require('../services/donorService');
+const donorService = require('../service/donorService');
 
 
 /**
@@ -15,7 +15,7 @@ let getDonorRecommendation = (request, response, next) => {
     let charityProvince = request.query.charityProvince;
 
 
-    dappService.getDonorRecommendation(subCategory, employeeRange, charityProvince).then((result) => {
+    donorService.getDonorRecommendation(subCategory, employeeRange, charityProvince).then((result) => {
         response.status(result.statusCode).json(result.data);
         console.log('info: Get donor recommendation request completed');
     });
