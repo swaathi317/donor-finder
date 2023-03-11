@@ -16,8 +16,9 @@ let getDonorRecommendation = (request, response, next) => {
 
 
     donorService.getDonorRecommendation(subCategory, employeeRange, charityProvince).then((result) => {
-        console.log(request.query)
+
         response.status(result.statusCode).json(result.data);
+
         console.log('info: Get donor recommendation request completed');
     });
 }

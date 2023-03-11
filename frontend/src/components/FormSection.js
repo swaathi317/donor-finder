@@ -21,7 +21,7 @@ const FormSection = (props) => {
         queryData['charity_province'] = charityProvince;
         queryData['charity_focus'] = charityFocus;
         queryData['charity_employees'] = charityEmployees;
-        console.log(queryData);
+
 
         const params = new URLSearchParams(queryData);
         let url = CONSTANTS.apiCall.url + params.toString();

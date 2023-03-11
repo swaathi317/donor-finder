@@ -9,6 +9,20 @@ const ResultsPage = (props) => {
     let toSetPageView = props.toSetPageView;
     let resultData = props.resultData;
 
+    const donationConsistency = (consistency) => {
+        let consistency_range = ''
+        switch (consistency) {
+            case 1: consistency_range = 'Rare';
+                break;
+            case 2: consistency_range = 'Occasional';
+                break;
+            case 3: consistency_range = 'Frequent';
+                break;
+            default: consistency_range = 'Very Frequent';
+        }
+
+        return consistency_range;
+    }
 
     return (
 
@@ -35,7 +49,7 @@ const ResultsPage = (props) => {
                                     {CONSTANTS.resultSection.num_charities_label}
                                 </div>
                                 <div className="donor-detail-value">
-                                    {data.charities_donated}
+                                    {data.num_charities_supported}
                                 </div>
                             </div>
                             <div className="result-body">
@@ -43,7 +57,7 @@ const ResultsPage = (props) => {
                                     {CONSTANTS.resultSection.num_donations_label}
                                 </div>
                                 <div className="donor-detail-value">
-                                    {data.number_of_donations}
+                                    {data.total_donations}
                                 </div>
                             </div>
                             <div className="result-body">
@@ -51,7 +65,7 @@ const ResultsPage = (props) => {
                                     {CONSTANTS.resultSection.freq_donor_label}
                                 </div>
                                 <div className="donor-detail-value">
-                                    {data.frequency_of_donation}
+                                    {donationConsistency(data.donation_consistency)}
                                 </div>
                             </div>
                         </div>

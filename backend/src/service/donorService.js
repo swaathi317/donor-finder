@@ -1,5 +1,5 @@
-
-
+const donorDao = require('../dao/donorDao');
+const fs = require('fs');
 
 /**
  * Method: getDonorRecommendation
@@ -11,35 +11,28 @@
 let getDonorRecommendation = (subCategory, employeeRange, charityProvince) => {
 
     return new Promise((resolve, reject) => {
-        console.log(subCategory, employeeRange, charityProvince);
-        let donorData = [
-            {
-                "donor_name": "XYZ",
-                "donor_province": "XY",
-                "charities_donated": "444",
-                "number_of_donations": "667",
-                "frequency_of_donation": "Very frequent; every year"
-            },
-            {
-                "donor_name": "XYZ",
-                "donor_province": "XY",
-                "charities_donated": "444",
-                "number_of_donations": "667",
-                "frequency_of_donation": "Very frequent; every year"
-            },
-            {
-                "donor_name": "XYZ",
-                "donor_province": "XY",
-                "charities_donated": "444",
-                "number_of_donations": "667",
-                "frequency_of_donation": "Very frequent; every year"
-            }
-        ];
-        let result = {}
-        result.data = donorData;
-        result.statusCode = 200;
 
-        resolve(result)
+
+        fs.readFile('./src/service/donor_data_min.json', 'utf8', (error, data) => {
+            if (error) {
+                console.error(error);
+                return;
+            }
+
+            const jsonData = JSON.parse(data);
+
+            const filteredObjects = jsonData.filter(obj =>
+                obj.donor_province === charityProvince && obj.frequent_sub_category === parseInt(subCategory) && obj.donations_per_employee_range === parseInt(employeeRange)
+            );
+
+            let result = {};
+            result.data = filteredObjects;
+            result.statusCode = 200;
+
+            resolve(result)
+        })
+
+
 
     });
 }
