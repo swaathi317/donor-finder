@@ -1,0 +1,145 @@
+{
+    "introductionSection": {
+        "introduction_para_1": "Are you a Canadian Non-Profit that supports education?",
+        "introduction_para_2": "We understand how crucial it is to find the right donor charities to support your cause. Our platform matches you with donors who align with your goals and are more likely to donate. We use data-driven insights to provide you with personalized recommendations.",
+        "introduction_para_3": "With EduQuest, non-profits can focus on what really matters - making a positive impact on Canadian education.",
+        "keywords": [
+            "data-driven",
+            "personalized",
+            "recommendations",
+            "right",
+            "donor"
+        ]
+    },
+    "formSection": {
+        "form_element_1": {
+            "label": "Name of your Non-Profit",
+            "placeholder": "Enter your Non-Profit's name"
+        },
+        "form_element_2": {
+            "label": "What is your focus?",
+            "placeholder": "Select a focus",
+            "options": [
+                {
+                    "display": "Teaching Institutions",
+                    "value": 0
+                },
+                {
+                    "display": "Support of Schools & Education",
+                    "value": 1
+                },
+                {
+                    "display": "Education in arts",
+                    "value": 2
+                },
+                {
+                    "display": "Educational Organizations not else categorized",
+                    "value": 3
+                },
+                {
+                    "display": "Research",
+                    "value": 4
+                },
+                {
+                    "display": "Foundations Advancing Education",
+                    "value": 5
+                }
+            ]
+        },
+        "form_element_3": {
+            "label": "Where are you located?",
+            "placeholder": "Select a province",
+            "options": [
+                {
+                    "display": "Alberta",
+                    "value": "AB"
+                },
+                {
+                    "display": "British Columbia",
+                    "value": "BC"
+                },
+                {
+                    "display": "Manitoba",
+                    "value": "MB"
+                },
+                {
+                    "display": "New Brunswick",
+                    "value": "NB"
+                },
+                {
+                    "display": "Newfoundland and Labrador",
+                    "value": "NL"
+                },
+                {
+                    "display": "Nova Scotia",
+                    "value": "NS"
+                },
+                {
+                    "display": "Ontario",
+                    "value": "ON"
+                },
+                {
+                    "display": "Prince Edward Island",
+                    "value": "PE"
+                },
+                {
+                    "display": "Quebec",
+                    "value": "QC"
+                },
+                {
+                    "display": "Saskatchewan",
+                    "value": "SK"
+                }
+            ]
+        },
+        "form_element_4": {
+            "label": "How many full-time employees work for you?",
+            "placeholder": "Select full-time employee range",
+            "options": [
+                {
+                    "display": "0",
+                    "value": 0
+                },
+                {
+                    "display": "1",
+                    "value": 1
+                },
+                {
+                    "display": "2 - 5",
+                    "value": 2
+                },
+                {
+                    "display": "6 - 10",
+                    "value": 3
+                },
+                {
+                    "display": "11 - 20",
+                    "value": 4
+                },
+                {
+                    "display": "21 - 50",
+                    "value": 5
+                },
+                {
+                    "display": "51 - 100",
+                    "value": 6
+                },
+                {
+                    "display": "100+",
+                    "value": 7
+                }
+            ]
+        },
+        "submit-button": "FIND DONORS"
+    },
+    "resultSection": {
+        "num_result_label": "",
+        "num_charities_label": "Number of charities donated between 2018 - 2021",
+        "num_donations_label": "Number of donations made between 2018 -2021",
+        "freq_donor_label": "Frequency of donation",
+        "back_to_home": "Find donors for another Non-Profit"
+    },
+    "apiCall": {
+        "url": "http://localhost:5000/donor?"
+    }
+}

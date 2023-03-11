@@ -1,0 +1,37 @@
+.introduction-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+
+.introduction-text,
+.introduction-image {
+    flex-basis: 50%;
+}
+
+.introduction-text .intro-para {
+    margin: 10px 0 30px;
+    font-size: 18px;
+}
+
+.introduction-image {
+    text-align: center;
+}
+
+.introduction-image img {
+    width: 400px;
+    height: 310px;
+}
+
+.para-bold {
+    font-weight: bold;
+    color: var(--theme-dark-gray);
+}
+
+.highlight-text {
+    color: var(--theme-green);
+    font-weight: bold;
+}

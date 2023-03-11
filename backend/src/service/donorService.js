@@ -11,6 +11,7 @@
 let getDonorRecommendation = (subCategory, employeeRange, charityProvince) => {
 
     return new Promise((resolve, reject) => {
+        console.log(subCategory, employeeRange, charityProvince);
         let donorData = [
             {
                 "donor_name": "XYZ",

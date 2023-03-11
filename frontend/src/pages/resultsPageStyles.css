@@ -1,0 +1,46 @@
+.results-count,
+.back-to-home {
+    width: 80%;
+    margin: 70px auto 0;
+    font-weight: bold;
+    color: var(--theme-green);
+}
+
+.back-to-home {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.results-container,
+.results-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.results-item {
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--theme-grid-boxes-background);
+    padding: 10px 30px;
+    border-radius: var(--border-radius-container);
+}
+
+.result-body,
+.result-head {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.result-head .donor-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.result-body .donor-detail-value {
+    flex-basis: 40%;
+}
