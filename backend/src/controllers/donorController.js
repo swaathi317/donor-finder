@@ -10,12 +10,13 @@ const donorService = require('../service/donorService');
  */
 let getDonorRecommendation = (request, response, next) => {
 
-    let subCategory = request.query.subCategory;
-    let employeeRange = request.query.employeeRange;
-    let charityProvince = request.query.charityProvince;
+    let subCategory = request.query.charity_focus;
+    let employeeRange = request.query.charity_employees;
+    let charityProvince = request.query.charity_province;
 
 
     donorService.getDonorRecommendation(subCategory, employeeRange, charityProvince).then((result) => {
+        console.log(request.query)
         response.status(result.statusCode).json(result.data);
         console.log('info: Get donor recommendation request completed');
     });
