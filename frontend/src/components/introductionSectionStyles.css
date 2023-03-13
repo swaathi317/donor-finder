@@ -35,3 +35,20 @@
     color: var(--theme-green);
     font-weight: bold;
 }
+
+@media only screen and (max-width: 1050px) {
+
+    .introduction-text,
+    .introduction-image {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .introduction-image img {
+        width: 300px;
+        height: 250px;
+    }
+
+}

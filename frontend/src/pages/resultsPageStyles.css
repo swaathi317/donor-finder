@@ -9,6 +9,7 @@
 .back-to-home {
     cursor: pointer;
     text-decoration: underline;
+    text-align: center;
 }
 
 .results-container,
@@ -43,4 +44,15 @@
 
 .result-body .donor-detail-value {
     flex-basis: 40%;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 970px) {
+    .result-body .donor-detail-value {
+        flex-basis: 100%;
+    }
+
+    .results-item {
+        width: 100%;
+    }
 }
